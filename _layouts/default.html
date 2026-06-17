@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  {% include "head.html" %}
+  <body class="{{ layoutType }}">
+    <div class="content">
+      {{ content | safe }}
+    </div>
+    {% include "footer.html" %}
+  </body>
+</html>

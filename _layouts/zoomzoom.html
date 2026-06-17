@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  {% include "head.html" %}
+  <body class="zoomzoom">
+    <div class="content">
+      <div class="simple-nav"><span class="unicode"></span> <a href="/zoomzoom/">Zoom Zoom Drawing Club</a> ></div>
+      {{ content | safe }}
+      {% include "zz-footer.html" %}
+    </div>
+  </body>
+</html>

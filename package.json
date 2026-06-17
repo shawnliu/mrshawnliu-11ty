@@ -1,0 +1,14 @@
+{
+  "name": "mrshawnliu-eleventy",
+  "version": "1.0.0",
+  "description": "Eleventy version of mrshawnliu.com (local test)",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "luxon": "^3.4.4",
+    "sass": "^1.69.5"
+  }
+}
