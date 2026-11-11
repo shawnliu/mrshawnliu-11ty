@@ -358,3 +358,210 @@ form {
     }
   }
 }
+
+/* 100 Postcards */
+.postcard-archive {
+  .content {
+    max-width: 96rem;
+  }
+}
+
+.postcard-archive__header {
+  max-width: var(--width-content);
+}
+
+
+.postcard-grid {
+  display: grid;
+  // Cards are at least 100px wide; as many columns as fit
+  // (8 across at the page's full width, 3 on a phone).
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1.5em 1em;
+  margin-top: 2.5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.postcard-position {
+  margin: 0;
+  min-width: 0;
+
+  a {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+  }
+
+  // Hover: a thin, light frame around the card and its number, 5px out
+  a:hover,
+  a:focus-visible {
+    outline: 1px solid var(--color-hr);
+    outline-offset: 5px;
+  }
+}
+
+.postcard-position__image {
+  align-items: center;
+  aspect-ratio: 2 / 3; // most cards are portrait, so they fill the cell width
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.3em;
+
+  img {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.postcard-position__image-pending {
+  aspect-ratio: 2 / 3;
+  border: 1px solid var(--color-post-border);
+  display: block;
+  height: 100%;
+}
+
+.postcard-position__number {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+// Received: a small filled dot after the number
+.postcard-position__received {
+  background: currentColor;
+  border-radius: 50%;
+  display: inline-block;
+  height: 0.45em;
+  margin-left: 0.35em;
+  vertical-align: 0.15em;
+  width: 0.45em;
+}
+
+.postcard-legend {
+  color: var(--color-txt-meta);
+  font-size: var(--font-size-S);
+
+  .postcard-position__received {
+    margin: 0 0.3em 0 0;
+  }
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.postcard-position--empty {
+  color: var(--color-txt-meta);
+
+  .postcard-position__number {
+    opacity: 0.55;
+  }
+}
+
+
+.postcard-record__nav {
+  margin-bottom: 2em;
+}
+
+.postcard-record__header {
+  margin-bottom: 1.5em;
+
+  h1 {
+    margin: 0.1em 0 0;
+  }
+}
+
+.postcard-record__number {
+  color: var(--color-txt-meta);
+  font-size: var(--font-size-S);
+}
+
+.postcard-detail {
+  .content {
+    max-width: 108rem;
+  }
+}
+
+.postcard-record__images {
+  max-width: var(--width-content);
+}
+
+.postcard-record__image {
+  min-width: 0;
+
+  figcaption {
+    color: var(--color-txt-meta);
+    font-size: var(--font-size-S);
+    margin-bottom: 0.75em;
+  }
+}
+
+.postcard-record__image + .postcard-record__image {
+  margin-top: 2.5em;
+}
+
+.postcard-record__image img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+@media (min-width: 760px) {
+  .postcard-record__images--paired {
+    align-items: start;
+    display: grid;
+    gap: 3em;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    max-width: none;
+
+    .postcard-record__image + .postcard-record__image {
+      margin-top: 0;
+    }
+  }
+}
+
+.postcard-record__image-pending {
+  align-items: center;
+  aspect-ratio: 3 / 2;
+  border: 1px solid var(--color-post-border);
+  color: var(--color-txt-meta);
+  display: flex;
+  font-size: var(--font-size-S);
+  justify-content: center;
+  max-width: 100%;
+}
+
+.postcard-metadata {
+  font-size: var(--font-size-S);
+  margin: 2em 0;
+
+  div {
+    display: grid;
+    column-gap: 1.5ch;
+    grid-template-columns: 11ch 1fr;
+  }
+
+  dt,
+  dd {
+    margin: 0;
+  }
+
+  dt {
+    color: var(--color-txt-meta);
+  }
+}
+
+.postcard-record__notes {
+  max-width: 48rem;
+}

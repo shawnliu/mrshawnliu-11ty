@@ -1,0 +1,570 @@
+[
+  {
+    "id": 1,
+    "title": "Tokyo street corner",
+    "painted": "2026-05-06",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/001.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/001.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Tokyo no skateboard",
+    "painted": "2026-05-07",
+    "mailed": "2026-05-27",
+    "destination": "Owatonna, MN",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/002.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/002.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/002-received.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Eggo",
+    "painted": "2026-05-08",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/003.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/003.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "title": "man carrying little girl",
+    "painted": "2026-05-10",
+    "mailed": "2026-05-27",
+    "destination": "Brooklyn, NY",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/004.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/004.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/004-received.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Hi Anna",
+    "painted": "2026-05-11",
+    "mailed": "2026-05-27",
+    "destination": "West Hurley, NY",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/005.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/005.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/005-received.jpg"
+    }
+  },
+  {
+    "id": 6,
+    "title": "dotted pants",
+    "painted": "2026-05-12",
+    "mailed": "2026-05-27",
+    "destination": "Brooklyn, NY",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/006.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/006.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/006-received.jpg"
+    }
+  },
+  {
+    "id": 7,
+    "title": "EWING",
+    "painted": "2026-05-13",
+    "mailed": "2026-05-27",
+    "destination": "Ho-ho-kus, NJ",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/007.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/007.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/007-received.jpg"
+    }
+  },
+  {
+    "id": 8,
+    "title": "melted",
+    "painted": "2026-05-18",
+    "mailed": "2026-05-31",
+    "destination": "Cantabria, Spain",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/008.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/008.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/008-received.jpg"
+    },
+    "notes": "melted popsicle"
+  },
+  {
+    "id": 9,
+    "title": "bike lane",
+    "painted": "2026-05-19",
+    "mailed": "2026-05-27",
+    "destination": "Brooklyn, NY",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/009.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/009.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/009-received.jpg"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Rope",
+    "painted": "2026-05-25",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/010.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/010.jpg"
+    },
+    "notes": "based on Craig Mod's photo"
+  },
+  {
+    "id": 11,
+    "title": "Orange coat dog",
+    "painted": "2026-05-26",
+    "mailed": "2026-05-31",
+    "destination": "New York, NY",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/011.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/011.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/011-received.jpg"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Steps, take 2",
+    "painted": "2026-05-27",
+    "mailed": "2026-05-31",
+    "destination": "Portland, OR",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/012.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/012.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/012-received.jpg"
+    },
+    "notes": "coupon mailing on our steps"
+  },
+  {
+    "id": 13,
+    "title": "Bike, shadow",
+    "painted": "2026-05-28",
+    "mailed": "2026-05-31",
+    "destination": "New York, NY",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/013.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/013.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/013-received.jpg"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Reebok sneakers",
+    "painted": "2026-05-30",
+    "mailed": "2026-05-31",
+    "destination": "Brooklyn, NY",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/014.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/014.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/014-received.jpg"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Ratty",
+    "painted": "2026-05-31",
+    "mailed": "2026-06-10",
+    "status": "missing",
+    "painting": {
+      "image": "/assets/images/100postcards/015.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/015.jpg"
+    },
+    "notes": "Casey Rubber Stamp's cat"
+  },
+  {
+    "id": 16,
+    "title": "Golden Car Wash",
+    "painted": "2026-06-01",
+    "mailed": "2026-06-10",
+    "destination": "Brooklyn, NY",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/016.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/016.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/016-received.jpg"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Ripped chair",
+    "painted": "2026-06-05",
+    "mailed": "2026-06-10",
+    "destination": "Oxford, England",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/017.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/017.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/017-received.jpg"
+    }
+  },
+  {
+    "id": 18,
+    "title": "Quaker parrot ($400)",
+    "painted": "2026-06-07",
+    "mailed": "2026-06-10",
+    "destination": "Liverpool, UK",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/018.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/018.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/018-received.jpg"
+    }
+  },
+  {
+    "id": 19,
+    "title": "Utz",
+    "painted": "2026-06-08",
+    "mailed": "2026-06-14",
+    "destination": "London, England",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/019.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/019.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/019-received.jpg"
+    }
+  },
+  {
+    "id": 20,
+    "title": "Moist Supreme",
+    "painted": "2026-06-09",
+    "mailed": "2026-06-14",
+    "destination": "Manning, Australia",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/020.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/020.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/020-received.jpg"
+    }
+  },
+  {
+    "id": 21,
+    "title": "Chum.",
+    "painted": "2026-06-10",
+    "mailed": "2026-06-14",
+    "destination": "Villeurbanne, France",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/021.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/021.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/021-received.jpg"
+    }
+  },
+  {
+    "id": 22,
+    "title": "Red pants on blue bench",
+    "painted": "2026-06-11",
+    "mailed": "2026-06-14",
+    "destination": "Melbourne, Australia",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/022.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/022.jpg"
+    }
+  },
+  {
+    "id": 23,
+    "title": "Hockney",
+    "painted": "2026-06-12",
+    "mailed": "2026-06-14",
+    "destination": "Tokyo, Japan",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/023.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/023.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/023-received.jpg"
+    }
+  },
+  {
+    "id": 24,
+    "title": "Not Nothing",
+    "painted": "2026-06-13",
+    "mailed": "2026-06-24",
+    "status": "missing",
+    "painting": {
+      "image": "/assets/images/100postcards/024.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/024.jpg"
+    }
+  },
+  {
+    "id": 25,
+    "title": "FedEx",
+    "painted": "2026-06-15",
+    "mailed": "2026-06-24",
+    "status": "missing",
+    "painting": {
+      "image": "/assets/images/100postcards/025.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/025.jpg"
+    }
+  },
+  {
+    "id": 26,
+    "title": "Dog",
+    "painted": "2026-06-17",
+    "mailed": "2026-06-24",
+    "status": "missing",
+    "painting": {
+      "image": "/assets/images/100postcards/026.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/026.jpg"
+    }
+  },
+  {
+    "id": 27,
+    "title": "Brunson",
+    "painted": "2026-06-19",
+    "mailed": "2026-06-24",
+    "status": "missing",
+    "painting": {
+      "image": "/assets/images/100postcards/027.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/027.jpg"
+    }
+  },
+  {
+    "id": 28,
+    "title": "Orange arm",
+    "painted": "2026-06-23",
+    "mailed": "2026-07-14",
+    "destination": "Lake Forest Park, WA",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/028.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/028.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/028-received.jpg"
+    }
+  },
+  {
+    "id": 29,
+    "title": "Blue traffic stick",
+    "painted": "2026-07-01",
+    "mailed": "2026-07-14",
+    "destination": "Senhora da Hora, Portugal",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/029.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/029.jpg"
+    }
+  },
+  {
+    "id": 30,
+    "title": "Bathroom door",
+    "painted": "2026-07-02",
+    "mailed": "2026-07-14",
+    "destination": "Brooklyn, NY",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/030.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/030.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/030-received.jpg"
+    }
+  },
+  {
+    "id": 31,
+    "title": "\"Mellow\"",
+    "painted": "2026-07-03",
+    "mailed": "2026-07-14",
+    "destination": "Brooklyn, NY",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/031.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/031.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/031-received.jpg"
+    }
+  },
+  {
+    "id": 32,
+    "title": "Ice water",
+    "painted": "2026-07-06",
+    "mailed": "2026-07-14",
+    "status": "missing",
+    "painting": {
+      "image": "/assets/images/100postcards/032.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/032.jpg"
+    }
+  },
+  {
+    "id": 33,
+    "title": "Yellow hydrant",
+    "painted": "2026-07-07",
+    "mailed": "2026-07-14",
+    "destination": "Las Vegas, NV",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/033.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/033.jpg"
+    },
+    "received": {
+      "image": "/assets/images/100postcards/033-received.jpg"
+    }
+  },
+  {
+    "id": 34,
+    "title": "Fries",
+    "painted": "2026-07-09",
+    "mailed": "2026-07-14",
+    "destination": "London, UK",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/034.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/034.jpg"
+    }
+  },
+  {
+    "id": 35,
+    "title": "Greenmarket dog",
+    "painted": "2026-07-10",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/035.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/035.jpg"
+    }
+  },
+  {
+    "id": 36,
+    "title": "Blue coffee cup",
+    "painted": "2026-07-30",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/036.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/036.jpg"
+    }
+  },
+  {
+    "id": 37,
+    "title": "Dow Fix",
+    "painted": "2026-08-07",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/037.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/037.jpg"
+    }
+  },
+  {
+    "id": 38,
+    "title": "Ice coffee",
+    "painted": "2026-08-09",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/038.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/038.jpg"
+    }
+  },
+  {
+    "id": 39,
+    "title": "Not Nothing (#24 repaint)",
+    "painted": "2026-08-10",
+    "mailed": "2026-08-18",
+    "destination": "Maplewood, NJ",
+    "status": "received",
+    "painting": {
+      "image": "/assets/images/100postcards/039.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/039.jpg"
+    }
+  },
+  {
+    "id": 40,
+    "title": "Ice coffee in swirly mug",
+    "painted": "2026-08-10",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/040.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/040.jpg"
+    }
+  },
+  {
+    "id": 41,
+    "title": "Sky at Howard Beach",
+    "painted": "2026-08-11",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/041.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/041.jpg"
+    }
+  },
+  {
+    "id": 42,
+    "title": "Tree",
+    "painted": "2026-08-13",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/042.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/042.jpg"
+    }
+  },
+  {
+    "id": 43,
+    "title": "Nico holding coffee",
+    "painted": "2026-08-28",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/043.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/043.jpg"
+    }
+  },
+  {
+    "id": 44,
+    "title": "Walk Way",
+    "painted": "2026-08-29",
+    "status": "painted",
+    "painting": {
+      "image": "/assets/images/100postcards/044.jpg",
+      "thumbnail": "/assets/images/100postcards/thumbnails/044.jpg"
+    }
+  }
+]

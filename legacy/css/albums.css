@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+/* reset */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --color-white: #fff;
+  --color-pink: rgb(255, 181, 252);
+  --color-bg: #f3f3f3;
+  --color-post-border: #ddd;
+  --color-hr: #ccc;
+  --color-txt: rgb(35, 28, 51);
+  --color-txt-link: var(--color-txt);
+  --color-txt-meta: #888;
+  --font-size-base: 10px;
+  --font-size-XS: 1.1rem;
+  --font-size-S: 1.4rem;
+  --font-size-M: 1.6rem;
+  --font-size-L: 2rem;
+  --font-size-XL: 3rem;
+  --font-size-XXL: 3.6rem;
+  --post-padding: 1.2em;
+  --post-margin: 1.2em;
+  --width-login: 30rem;
+  --width-comments: 54rem;
+  --width-content: 60rem;
+  --padding-bottom: 4rem;
+  --padding-content: 8px;
+}
+
+@media (min-width: 60em) {
+  :root {
+    --font-size-XS: 1.2rem;
+    --font-size-S: 1.4rem;
+    --font-size-M: 1.6rem;
+    --font-size-L: 2rem;
+    --font-size-XL: 3.5rem;
+    --font-size-XXL: 4.6rem;
+  }
+}
+html {
+  font-size: var(--font-size-base);
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  font-size: var(--font-size-M);
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+#main-container {
+  max-width: 1046px;
+  margin: 1em auto;
+}
+
+h1 {
+  font-size: var(--font-size-XL);
+  font-weight: 800;
+  margin: 1.5em auto 1em auto;
+  text-align: center;
+}
+
+a {
+  color: var(--color-txt-link);
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+iframe {
+  display: block;
+}
+
+.albums-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  flex-flow: wrap row;
+}
+
+.per-album {
+  width: 300px;
+  margin: 18px;
+}
+.per-album .album-art img {
+  display: block;
+  width: 100%;
+}
+.per-album .album-info {
+  margin: 10px 0;
+}
+.per-album .album-name {
+  font-weight: 700;
+}
+.per-album .album-artist {
+  color: var(--color-txt-meta);
+}
+
+/*# sourceMappingURL=albums.css.map */

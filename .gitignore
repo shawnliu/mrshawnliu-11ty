@@ -1,3 +1,8 @@
 node_modules/
 _eleventy-output/
 .DS_Store
+_originals/
+_postcard-inbox/
+assets/images/100postcards/inbox/
+Claude outputs/
+assets/images/100postcards/_inbox/

@@ -1,0 +1,84 @@
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Karla", "Helvetica Neue", Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6em;
+  text-align: left;
+}
+
+.israel-alonso {
+  margin: 20px;
+}
+
+img {
+  margin: 1em auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 700;
+  max-width: 600px;
+  margin: 1.5em auto;
+}
+
+p {
+  max-width: 600px;
+  margin: 1.5em auto;
+}
+
+a {
+  color: #006666;
+}
+a:hover {
+  text-decoration: none;
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  color: #666;
+  font-family: Georgia;
+  font-style: italic;
+  max-width: 500px;
+  margin: 1.5em auto;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+  img {
+    width: auto;
+  }
+  .israel-alonso {
+    margin: 60px auto;
+    max-width: 800px;
+  }
+}
+
+/*# sourceMappingURL=israel.css.map */

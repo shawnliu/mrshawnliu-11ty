@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<article class="postcard-record">
+  <nav class="simple-nav postcard-record__nav" aria-label="Postcard archive">
+    <span class="unicode">&#8592;&#xFE0E;</span>
+    <a href="{{ postcard.id | postcardArchiveUrl }}">100 Postcard Paintings</a>
+  </nav>
+
+  <header class="postcard-record__header">
+    <div class="postcard-record__number">#{{ postcard.id | postcardId }}</div>
+    {% if postcard.title %}<h1>{{ postcard.title }}</h1>{% endif %}
+  </header>
+
+  {% set hasReceivedImage = postcard.received and postcard.received.image and (postcard.received.image | assetExists) %}
+  <div class="postcard-record__images{% if hasReceivedImage %} postcard-record__images--paired{% endif %}">
+    {% if hasReceivedImage %}
+      <figure class="postcard-record__image postcard-record__image--received">
+        <figcaption>Received</figcaption>
+        <img
+          src="{{ postcard.received.image }}"
+          alt="Postcard #{{ postcard.id | postcardId }} after arriving{% if postcard.destination %} in {{ postcard.destination }}{% endif %}"
+        >
+      </figure>
+    {% endif %}
+
+    <figure class="postcard-record__image postcard-record__image--original">
+      {% if hasReceivedImage %}<figcaption>Original</figcaption>{% endif %}
+      {% if postcard.painting.image | assetExists %}
+        <img
+          class="postcard-record__painting"
+          src="{{ postcard.painting.image }}"
+          alt="Postcard painting #{{ postcard.id | postcardId }}{% if postcard.title %}, {{ postcard.title }}{% endif %}"
+        >
+      {% else %}
+        <div class="postcard-record__image-pending" role="img" aria-label="Image for postcard #{{ postcard.id | postcardId }} is being prepared">
+          Image forthcoming
+        </div>
+      {% endif %}
+    </figure>
+  </div>
+
+  <dl class="postcard-metadata">
+    {% if postcard.painted %}
+      <div><dt>Painted</dt><dd>{{ postcard.painted | postcardDate }}</dd></div>
+    {% endif %}
+    {% if postcard.mailed %}
+      <div><dt>Mailed</dt><dd>{{ postcard.mailed | postcardDate }}</dd></div>
+    {% endif %}
+    {% if postcard.destination %}
+      <div><dt>Destination</dt><dd>{{ postcard.destination }}</dd></div>
+    {% endif %}
+    {% if postcard.status %}
+      <div><dt>Status</dt><dd>{{ postcard.status | postcardStatus }}</dd></div>
+    {% endif %}
+  </dl>
+
+  {% if postcard.notes %}
+    <p class="postcard-record__notes">{{ postcard.notes }}</p>
+  {% endif %}
+
+</article>

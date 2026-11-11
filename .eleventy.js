@@ -1,4 +1,5 @@
 const sass = require("sass");
+const fs = require("fs");
 const path = require("path");
 const { DateTime } = require("luxon");
 
@@ -6,8 +7,13 @@ module.exports = function (eleventyConfig) {
   // ---------------------------------------------------------------------------
   // Passthrough copies
   // ---------------------------------------------------------------------------
-  eleventyConfig.addPassthroughCopy("assets");
+  // The postcard inbox holds raw scans; keep it off the site.
+  eleventyConfig.addPassthroughCopy("assets", {
+    filter: (p) => !/(^|\/)_?inbox(\/|$)/i.test(p) && !p.endsWith(".DS_Store"),
+  });
   eleventyConfig.addPassthroughCopy("CNAME");
+  // Old Jekyll pages kept as-is so their URLs keep working (see docs/deploy.md)
+  eleventyConfig.addPassthroughCopy({ legacy: "/" });
 
   // ---------------------------------------------------------------------------
   // Ignore Jekyll artefacts that live in the repo root
@@ -29,6 +35,49 @@ module.exports = function (eleventyConfig) {
   // limit — replaces Jekyll's  | limit:N  Liquid filter
   eleventyConfig.addFilter("limit", function (arr, n) {
     return Array.isArray(arr) ? arr.slice(0, n) : arr;
+  });
+
+  // Postcard IDs stay three digits everywhere: #001–#100.
+  eleventyConfig.addFilter("postcardId", function (id) {
+    return String(id).padStart(3, "0");
+  });
+
+  // ISO dates are calendar dates, so parse them without timezone conversion.
+  eleventyConfig.addFilter("postcardDate", function (date) {
+    if (!date) return "";
+    return DateTime.fromISO(date).toFormat("MMMM d, yyyy");
+  });
+
+  eleventyConfig.addFilter("postcardStatus", function (status) {
+    const labels = {
+      painted: "Painted",
+      in_transit: "In transit",
+      received: "Received",
+      missing: "Missing",
+      held: "Held",
+    };
+    return labels[status] || status;
+  });
+
+  eleventyConfig.addFilter("postcardById", function (postcards, id) {
+    if (!Array.isArray(postcards)) return null;
+    return postcards.find((postcard) => postcard.id === Number(id)) || null;
+  });
+
+  eleventyConfig.addFilter("numberRange", function (start, end) {
+    const length = Number(end) - Number(start) + 1;
+    return Array.from({ length }, (_, index) => Number(start) + index);
+  });
+
+  eleventyConfig.addFilter("postcardArchiveUrl", function (id) {
+    return "/100-postcard-paintings/#" + String(Number(id)).padStart(3, "0");
+  });
+
+  // During image preparation, omit broken image elements but keep records usable.
+  eleventyConfig.addFilter("assetExists", function (assetPath) {
+    if (!assetPath || typeof assetPath !== "string") return false;
+    const relativePath = assetPath.replace(/^\//, "");
+    return fs.existsSync(path.join(__dirname, relativePath));
   });
 
   // ---------------------------------------------------------------------------
@@ -76,7 +125,7 @@ module.exports = function (eleventyConfig) {
       layouts: "_layouts",
       output: "_eleventy-output",
     },
-    templateFormats: ["html", "md", "njk", "scss"],
+    templateFormats: ["html", "md", "njk", "scss", "11ty.js"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
   };

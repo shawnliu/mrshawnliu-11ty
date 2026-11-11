@@ -1,0 +1,55 @@
+---
+layout: page
+layoutType: postcard-archive
+title: "100 Postcards"
+permalink: "/100-postcard-paintings/index.html"
+---
+
+
+<header class="postcard-archive__header">
+  <h1>100 Postcard Paintings</h1>
+
+  
+    <p>
+      I'm painting 100 paintings on postcard-sized paper
+      and mailing them to friends and strangers around the world.
+    </p>
+    <p>
+      My only request: photograph the postcard when it arrives and send me the image.
+      I will compile those pictures into a book.
+    </p>
+    <p>
+      If you'd like an original postcard painting in your mailbox,
+      email me at postcard (at) this domain.
+    </p>
+    <p class="postcard-legend"><span class="postcard-position__received" aria-hidden="true"></span> arrived and photographed</p>
+</header>
+
+
+<ol class="postcard-grid" >
+  {% for id in 1 | numberRange(100) %}
+    {% set postcard = postcards | postcardById(id) %}
+    <li id="{{ id | postcardId }}" class="postcard-position{% if postcard %} postcard-position--recorded postcard-position--{{ postcard.status }}{% else %} postcard-position--empty{% endif %}">
+      {% if postcard %}
+        <a href="/100-postcard-paintings/{{ postcard.id | postcardId }}/" aria-label="Postcard #{{ postcard.id | postcardId }}{% if postcard.title %}: {{ postcard.title }}{% endif %}">
+          <span class="postcard-position__image">
+            {% if postcard.painting.thumbnail | assetExists %}
+              <img
+                src="{{ postcard.painting.thumbnail }}"
+                alt="Postcard painting #{{ postcard.id | postcardId }}{% if postcard.title %}, {{ postcard.title }}{% endif %}"
+                loading="lazy"
+              >
+            {% else %}
+              <span class="postcard-position__image-pending" aria-hidden="true"></span>
+            {% endif %}
+          </span>
+          <span class="postcard-position__number">#{{ postcard.id | postcardId }}{% if postcard.status == "received" %}<span class="postcard-position__received" title="Received"><span class="visually-hidden">, received</span></span>{% endif %}</span>
+        </a>
+      {% else %}
+        <span class="postcard-position__image" aria-hidden="true"></span>
+        <span class="postcard-position__number">#{{ id | postcardId }}</span>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ol>
+

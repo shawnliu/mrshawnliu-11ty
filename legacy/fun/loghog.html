@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/css/loghog.css">
+    <script src="https://kit.fontawesome.com/fcaa7b87e1.js" crossorigin="anonymous"></script>
+    <title>Hog away!</title>
+  </head>
+  <body>
+    <div class="simple-nav">
+      <ul>
+        <li><h2>Log Hog</h2></li>
+        <li class="nav-search">
+          Search goes here
+        </li>
+        <li><a href="#">+ New Log</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Log out</a></li>
+      </ul>
+    </div>
+    <div id="main-container" class="content-wrapper">
+      <section id="main-log-form">
+        <textarea placeholder="Log hogging!"></textarea>
+        <input type="submit" value="Hog it" />
+      </section>
+      <section id="log-hogs">
+        <div class="each-log">
+          I wonder if this would now allow PARALLEL_WORKERS to work, either on the guard call or in the spring: definition?</br>
+          YES!!!!
+          <div class="log-meta">
+            Feb 18, 2022 08:45am
+          </div>
+        </div>
+        <div class="each-log">
+          Setting from browser: this isn't fresh, but could work?
+  https://blog.bullettrain.co/auto-detecting-a-users-time-zone-in-rails/
+  I don't think jsTimezoneDetect is even alive anymore
+  Let's just try a simple way:
+  https://thewebdev.info/2022/02/05/how-to-detect-browser-time-zone-on-client-side-with-javascript/
+  Implemented, but leaves a challenge for future Rails editing of time zone by the user:
+    https://3.basecamp.com/5283846/buckets/26078432/todos/4619927299#__recording_4639764405
+          <div class="log-meta">
+            Feb 14, 2022 08:45am
+          </div>
+        </div>
+        <div class="each-log">
+          Need to run when a plugin is added to gemfile: bundle exec guard init
+or: bundle exec guard init plugin-name
+Then: bundle exec guard
+Plugins: https://github.com/guard/guard/wiki/Guard-Plugins
+This helped me set up the Guardfile to watch things (tweaked helper test watcher):
+https://alanvardy.com/post/guard-automated-testing
+          <div class="log-meta">
+            Feb 08, 2022 08:45am
+          </div>
+      </section>
+    </div>
+  </body>
+</html>

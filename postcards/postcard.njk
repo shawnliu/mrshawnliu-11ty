@@ -1,0 +1,11 @@
+---
+layout: postcard
+layoutType: postcard-detail
+pagination:
+  data: postcards
+  size: 1
+  alias: postcard
+permalink: "/100-postcard-paintings/{{ postcard.id | postcardId }}/index.html"
+eleventyComputed:
+  title: "Postcard #{{ postcard.id | postcardId }}{% if postcard.title %}: {{ postcard.title }}{% endif %}"
+---
