@@ -148,13 +148,13 @@ As of Nov 8, 2026:
 - Work is on branch `feature/100-postcard-paintings`, still uncommitted and undeployed.
 - The archive is now one page with all 100 positions (`postcardRanges.json` and the range pages were dropped; they were never published). Cards are at least 100px wide (8 across), in 2:3 cells. A dot after the number marks received postcards, with a key above the grid.
 - Scans and thumbnails exist for #001–#020; received photos for #002, #004–#009, #011–#014, #016, #018–#020.
-- Ready for the switch from the Jekyll site (`shawnliu.github.io`): `redirects.11ty.js` writes `/x.html` forwarders for every page, and old standalone Jekyll pages (Israel, fun/*, favorite albums, 2021 posts) are copied as-is from `legacy/`. The deploy workflow isn't added yet.
+- Ready for the switch from the Jekyll site (`shawnliu.github.io`): `redirects.11ty.js` writes `/x.html` forwarders for every page, and old standalone Jekyll pages (Israel, fun/*, favorite albums, 2021 posts) are copied as-is from `legacy/`. Hosting will be Netlify (already connected to this repo), not GitHub Pages.
 - The original project spec is outside this repo, on Shawn's Mac: `~/Documents/ChatGPT/100 Postcard Paintings/100-postcard-paintings-spec.md`.
 
 ## Next
 
 - Commit and push.
 - Scans and thumbnails for #021–#023, #028–#031, #033–#044.
-- Add a GitHub Actions deploy workflow, then move the custom domain from `shawnliu.github.io` to this repo.
+- Merge into `main`: Netlify builds `main` to https://mrshawnliu.netlify.app (checked Nov 11: Netlify serves this repo's Eleventy build there), so that's the full preview. Then point mrshawnliu.com at Netlify; today it's served by GitHub Pages from the Jekyll repo `shawnliu.github.io`.
 - Records for the newer postcards (#045 onward); remaining received photographs.
 - The project announcement is planned for around 70 postcards, sent as a last email to the Zoom Zoom Drawing Club list on Buttondown.
